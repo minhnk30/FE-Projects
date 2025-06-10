@@ -1,12 +1,52 @@
 /** @format */
+
+/* (10*100)/16 = 62,5% */
+/* 62,5% = 10px */
+html {
+	font-size: 62, 5%; /* 10px = 1rem */
+}
 :root {
 	--primary-color: #4a90e2;
 	--secondary-color: #50e3c2;
 	--color-accent: #f5a623;
+	--color-body: #333;
 }
 body {
 	font-family: 'Inter', 'Arial' sans-serif;
+	color: var(--color-body);
+	font-size: 2, 4rem; /* 16px */
 }
-h1,h2,h3{
-	color 
+h1,
+h2,
+h3 {
+	color: var(--color-heading);
+	margin-bottom: 1rem;
+}
+
+h1 {
+	/*1x font size of the html element*/
+	font-size: 7rem;
+}
+h2 {
+	font-size: 4rem;
+}
+h3 {
+	font-size: 3rem;
+}
+p {
+	margin-top: 0;
+}
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 1.8rem; /* 18px */
+	}
+	h1 {
+		font-size: 8rem;
+	}
+	h2 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 2.4rem;
+	}
 }
